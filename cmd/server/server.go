@@ -17,7 +17,7 @@ const defaultPort = "8080"
 
 func main() {
 
-	db, err := sql.Open("sqlit3", "./data.db")
+	db, err := sql.Open("sqlite3", "./data.db")
 	if err != nil {
 		panic(err)
 	}
